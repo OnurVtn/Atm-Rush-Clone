@@ -67,6 +67,7 @@ public class Money : MonoBehaviour
             if (this.CompareTag("Stacked Money"))
             {
                 GetComponent<MeshFilter>().mesh = goldMesh;
+                Destroy(GetComponent<MeshRenderer>().materials[1]);
                 GetComponent<MeshRenderer>().material = goldMaterial;
                 transform.localScale = new Vector3(2f, 4f, 4f);
                 Destroy(GetComponent<BoxCollider>());
@@ -78,6 +79,7 @@ public class Money : MonoBehaviour
             else if (this.CompareTag("Gold"))
             {
                 GetComponent<MeshFilter>().mesh = diamondMesh;
+                Destroy(GetComponent<MeshRenderer>().materials[1]);
                 GetComponent<MeshRenderer>().material = diamondMaterial;
                 transform.localScale = new Vector3(2f, 2.25f, 2f);
                 Destroy(GetComponent<BoxCollider>());

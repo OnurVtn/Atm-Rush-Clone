@@ -1,4 +1,4 @@
-# Atm Rush Clon
+# Atm Rush Clone
 Unity 2020.3.25f1
 
 
